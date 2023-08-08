@@ -21,12 +21,3 @@ export const Statistics = ({
     </>
   );
 };
-
-{
-  /* //  <Title>{title}</Title>
-//       <ul>
-//         <StatisticsStyled> Good </StatisticsStyled>
-//         <StatisticsStyled>Neutral </StatisticsStyled>
-//         <StatisticsStyled> Bad </StatisticsStyled>
-//       </ul> */
-}

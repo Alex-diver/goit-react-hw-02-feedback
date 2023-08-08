@@ -1,6 +1,5 @@
 import { GlobalStyle } from './GlobalStyle';
 import { Component } from 'react';
-// import { Section } from './Section/Section';
 import { Statistics } from './Statistics/Statistics';
 import { Section } from './Section/Section';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
@@ -12,13 +11,7 @@ export class App extends Component {
     neutral: 0,
     bad: 0,
   };
-  // handlex = type => {
-  //   this.setState(prevState => {
-  //     return {
-  //       [type]: prevState[type] + 1,
-  //     };
-  //   });
-  // };
+
   onLeaveFeedback = option => {
     this.setState(prevState => ({
       [option]: prevState[option] + 1,
@@ -36,32 +29,6 @@ export class App extends Component {
     return totalFeedback > 0 ? Math.round((good / totalFeedback) * 100) : 0;
   }
 
-  // render() {
-  //   const { good, neutral, bad } = this.state;
-  //   const totalFeedback = this.countTotalFeedback();
-  //   const positiveFeedback = this.countPositiveFeedbackPercentage();
-  //   return (
-  //     <>
-  //       <Section title="Please leave feedback" />;
-  //       <FeedbackOptions />
-  //       {/* <Statistics title="Statistics" />; */}
-  //       <Section title="Statistics">
-  //         {totalFeedback === 0 ? (
-  //           <Message message="There is no feedback" />
-  //         ) : (
-  //           <Statistics
-  //             good={good}
-  //             neutral={neutral}
-  //             bad={bad}
-  //             total={totalFeedback}
-  //             positivePercentage={positiveFeedback}
-  //           />
-  //         )}
-  //       </Section>
-  //       <GlobalStyle />;
-  //     </>
-  //   );
-  // }
   render() {
     const { good, neutral, bad } = this.state;
     const totalFeedback = this.countTotalFeedback();
