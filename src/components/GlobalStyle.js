@@ -30,6 +30,11 @@ ul {
   padding-left: 0;
   margin: 0;
 }
+li {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
 
 a {
   text-decoration: none;
