@@ -8,7 +8,7 @@ export const StatList = styled.ul`
 `;
 export const StatItem = styled.li`
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 `;
 export const StatTitle = styled.h2`
   font-size: 24px;
