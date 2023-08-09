@@ -17,7 +17,7 @@ export const StatTitle = styled.h2`
 `;
 export const NotificationMessage = styled.span`
   font-size: 18px;
-  font-weight: 6300;
+  font-weight: 400;
   margin: 10px 20px;
   color: blue;
 `;
